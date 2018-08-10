@@ -17,11 +17,17 @@ server.on('request',(req,res)=>{
         res.end(
             `
             <html><head><title>Information about the Operating system</title></head>
-            <body><h1> Informatons about the Operating System</h1>
+            <body><h1> Informations about the Operating System</h1>
             <table>
             <tr><th>Catalog TMP</th><td>${os.tmpdir()}</td></tr>
-            <tr><th>
+            <tr><th>Host name</th></tr>${os.hostname()}</td></tr>
+            <tr><th>System Type</th></tr>${os.type()}</td></th>
             `
         )
+    }else{
+    	res.writehead(404, {'Content-Type': 'text-plain'})
+    	res.end("something went wrong")
     }
 })
+server.listen(5000)
+console.log('server is runing on the port 5000')

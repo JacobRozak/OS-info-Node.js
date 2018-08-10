@@ -1,0 +1,20 @@
+{
+  "name": "os-info-node",
+  "version": "1.0.0",
+  "description": "displays info about the operating system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobRozak/OS-info-Node.js.git"
+  },
+  "author": "Jacob rozak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobRozak/OS-info-Node.js/issues"
+  },
+  "homepage": "https://github.com/JacobRozak/OS-info-Node.js#readme"
+}
